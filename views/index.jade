@@ -1,0 +1,22 @@
+extends layout
+
+block header
+    header 
+      CENTER
+       h2 The Gossip World!!!
+       .container
+       CENTER
+         if (!user)
+           h1 
+             a(href="/login") Login
+             br
+           h1 
+             a(href="/register") Register
+             br
+         if (user)
+           p You are currently logged in as #{user.username}
+           br
+           a(href="/logout") Logout
+
+
+block content

@@ -1,0 +1,99 @@
+body {
+
+  font-family: sans-serif;
+
+  background-color: #315481;
+
+  background-image: linear-gradient(to bottom, #315481, #918e82 100%);
+
+  background-attachment: fixed;
+
+  position: absolute;
+
+  top: 0;
+
+  bottom: 0;
+
+  left: 0;
+
+  right: 0; 
+
+  padding: 0;
+
+  margin: 0;
+
+  font-size: 14px;
+
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 1200px;
+}
+
+td{
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+    color: black;
+    word-break:break-all;
+}
+th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #315479;
+}
+
+.container {
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  min-height: 100%;
+
+  background: white;
+
+}
+
+header {
+
+  background: #d2edf4;
+
+  background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+
+  padding: 20px 15px 15px 15px;
+
+  position: relative;
+
+}
+
+#login-buttons {
+
+  display: block;
+
+}
+
+h1 {
+
+  font-size: 1.5em;
+
+  margin: 0;
+
+  margin-bottom: 10px;
+
+  display: inline-block;
+
+  margin-right: 1em;
+
+}
+
+header .hide-completed {
+
+  float: right;
+
+}
