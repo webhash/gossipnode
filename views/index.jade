@@ -18,5 +18,25 @@ block header
            br
            a(href="/logout") Logout
 
-
 block content
+    CENTER
+      if (user)
+        #updates
+          div
+            table
+              thead
+                tr
+                  td season
+                  td episode
+                  td release
+                  td title
+                  td cast
+                tr
+                - each update in updates
+                    tr
+                      td #{update.season}
+                      td #{update.episode}
+                      td #{update.release}
+                      td #{update.title}
+                      td #{update.cast}  
+                  

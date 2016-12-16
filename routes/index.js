@@ -1,11 +1,19 @@
 var express = require('express');
 var passport = require('passport');
 var Account = require('../models/account');
+var Updates = require('../models/database');
 var router = express.Router();
 
 
+
 router.get('/', function (req, res) {
-    res.render('index', { user : req.user });
+    Updates.find({}).sort({release:-1}).exec(
+        function(err, data){
+            res.render('index', { 
+                user : req.user, 
+                updates : data
+            });
+        });
 });
 
 router.get('/register', function(req, res) {
